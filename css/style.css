@@ -140,6 +140,34 @@
   margin-bottom: 0;
 }
 
+.section {
+  height: 25vw;
+}
+
+#home {
+  text-align: center;
+}
+
+#home h2 {
+  margin-top: 2em;
+  font-size: 2em;
+}
+
+#home .why {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#home .why > div {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  margin: 5em;
+}
+
 #contact h1 {
   color: black;
 }

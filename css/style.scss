@@ -109,6 +109,26 @@
     margin-bottom: 0;
 }
 
+.section{
+    height: 25vw;
+}
+
+#home{
+    text-align: center;
+    h2{
+        margin-top: 2em;
+        font-size: 2em;
+    }
+    .why{
+        display: flex;
+        flex-wrap: nowrap;
+        >div{
+            flex: 30%;
+            margin: 5em;
+        }
+    }
+}
+
 #contact{
     h1{
         color: black;
