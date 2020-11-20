@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -23,9 +24,45 @@
                 </li>
             </ul>
         </header>
+
         <div class="section" id="contact">
             <h1>Contact Us</h1>
+            <form class="contact-form" data-toggle="validator">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <!-- <i class="contact-icon fa fa-user"></i> -->
+                      <input type="text" class="form-control" id="name" placeholder="Full Name" required data-error="Please enter your name">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <!-- <i class="contact-icon fa fa-envelope-o"></i> -->
+                      <input type="email" class="form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <!-- <i class="contact-icon fa fa-pencil-square-o"></i> -->
+                      <input type="text" class="form-control" id="subject" placeholder="Subject" required data-error="Please enter your Subject">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <textarea id="message" rows="8" placeholder="Message" required data-error="Please enter your message"></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <button type="submit" id="form-submit" class="btn btn-common btn-form-submit">Send Message</button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+            </form>
         </div>
+
         <footer class="footer">
             <div class="container">
                 <div class="supermarket">

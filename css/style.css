@@ -1,3 +1,7 @@
+body {
+  background-color: #efefef;
+}
+
 .header {
   background-color: lightgray;
   height: 5em;
@@ -42,6 +46,7 @@
 
 .footer .supermarket .text {
   text-align: center;
+  color: white;
 }
 
 .footer .supermarket .market-icon {
@@ -117,9 +122,6 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
-  text-align: left;
-  margin-left: 3.5em;
-  margin-top: 1em;
 }
 
 .footer .contact-info .details > div h2 {
@@ -170,5 +172,201 @@
 
 #contact h1 {
   color: black;
+  text-align: center;
+}
+
+#contact form {
+  width: 60%;
+  margin: auto;
+}
+
+#contact form #message {
+  width: 100%;
+}
+
+#contact form button {
+  background-color: aqua;
+  color: white;
+}
+
+#products {
+  height: 50vw;
+  text-align: center;
+}
+
+#products .above {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+}
+
+#products .above > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  cursor: pointer;
+}
+
+#products .above > div .image {
+  position: relative;
+}
+
+#products .above > div .image img {
+  display: block;
+  margin: auto;
+}
+
+#products .above > div .image img:hover + .more {
+  background-color: aqua;
+  display: block;
+  color: white;
+  border-radius: 0.5em;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#products .above > div .image img:hover {
+  opacity: 0.5;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#products .above > div .image .more {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 25%;
+}
+
+#products .above > div .link {
+  background-color: white;
+  margin-left: 4.8em;
+  height: 3em;
+  width: 66%;
+}
+
+#products .above > div .link a {
+  text-align: center;
+  color: black;
+  margin: auto;
+}
+
+#products .below {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  margin-top: 3em;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+#products .below > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  cursor: pointer;
+}
+
+#products .below > div .image {
+  position: relative;
+}
+
+#products .below > div .image img {
+  display: block;
+  margin: auto;
+}
+
+#products .below > div .image img:hover + .more {
+  background-color: aqua;
+  display: block;
+  color: white;
+  border-radius: 0.5em;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#products .below > div .image img:hover {
+  opacity: 0.5;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#products .below > div .image .more {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 25%;
+}
+
+#products .below > div .link {
+  background-color: white;
+  margin-left: 4.8em;
+  height: 3em;
+  width: 66%;
+}
+
+#products .below > div .link a {
+  text-align: center;
+  color: black;
+  margin: auto;
+}
+
+#lists {
+  height: 50vw;
+}
+
+#lists .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#lists .head a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  font-size: 2.5em;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  color: black;
+}
+
+#lists .head h1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+#lists .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#lists .items > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23%;
+          flex: 0 0 23%;
+  margin: 1em;
+}
+
+#lists .items > div img {
+  display: block;
+  margin: auto;
+}
+
+#lists .items > div .text {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

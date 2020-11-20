@@ -1,3 +1,7 @@
+body{
+    background-color: #efefef;
+}
+
 .header{
     background-color: lightgray;
     height: 5em;
@@ -33,6 +37,7 @@
     .supermarket{
         .text{
             text-align: center;
+            color: white;
         }
         .market-icon{
             display: flex;
@@ -85,9 +90,6 @@
             flex-wrap: wrap;
             >div{
                 flex: 0 0 30%;
-                text-align: left;
-                margin-left: 3.5em;
-                margin-top: 1em;
                 h2{
                     color: white;
                 }
@@ -132,5 +134,149 @@
 #contact{
     h1{
         color: black;
+        text-align: center;
+    }
+    form{
+        width: 60%;
+        margin: auto;
+        #message{
+            width: 100%;
+        }
+        button{
+            background-color: aqua;
+            color: white;
+        }
+    }
+}
+
+#products{
+    height: 50vw;
+    text-align: center;
+    .above{
+        display: flex;
+        flex-wrap: nowrap;
+        transform: translateX(5%);
+        >div{
+            flex: 0 0 30%;
+            cursor: pointer;
+            .image{
+                position: relative;
+                img{
+                    display: block;
+                    margin: auto;
+                    &:hover + .more{
+                        background-color: aqua;
+                        display: block;
+                        color: white;
+                        border-radius: 0.5em;
+                        transition: all ease 0.5s;
+                    }
+                    &:hover{
+                        opacity: 0.5;
+                        transition: all ease 0.5s;
+                    }
+                }
+                .more{
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 40%;
+                    width: 25%;
+                }
+            }
+            
+            .link{
+                background-color: white;
+                margin-left: 4.8em;
+                height: 3em;
+                width: 66%;
+                a{
+                    text-align: center;
+                    color: black;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .below{
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        margin-top: 3em;
+        transform: translateX(20%);
+        >div{
+            flex: 0 0 30%;
+            cursor: pointer;
+            .image{
+                position: relative;
+                img{
+                    display: block;
+                    margin: auto;
+                    &:hover + .more{
+                        background-color: aqua;
+                        display: block;
+                        color: white;
+                        border-radius: 0.5em;
+                        transition: all ease 0.5s;
+                    }
+                    &:hover{
+                        opacity: 0.5;
+                        transition: all ease 0.5s;
+                    }
+                }
+                .more{
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 40%;
+                    width: 25%;
+                }
+            }
+            
+            .link{
+                background-color: white;
+                margin-left: 4.8em;
+                height: 3em;
+                width: 66%;
+                a{
+                    text-align: center;
+                    color: black;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+#lists{
+    height: 50vw;
+    .head{
+        display: flex;
+        a{
+            flex: 0 0 40%;
+            font-size: 2.5em;
+            margin-top: 0.5em;
+            margin-left: 1em;
+            color: black;
+        }
+        h1{
+            flex: 0 0 60%;
+        }
+    }
+    .items{
+        display: flex;
+        flex-wrap: nowrap;
+        >div{
+            flex: 0 0 23%;
+            margin: 1em;
+            img{
+                display: block;
+                margin: auto;
+            }
+            .text{
+                width: 100%;
+            }
+        }
     }
 }
