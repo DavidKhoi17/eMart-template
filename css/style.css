@@ -1,0 +1,146 @@
+.header {
+  background-color: lightgray;
+  height: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  display: block;
+  width: 6em;
+  height: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  margin-left: 2em;
+}
+
+.header ul {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%;
+  text-align: right;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+  font-size: 1.5em;
+}
+
+.header ul li {
+  margin: 0 0 0 0.5em;
+}
+
+.footer {
+  background-color: #0f7699;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f7699), to(#efefef));
+  background: linear-gradient(#0f7699, #efefef);
+}
+
+.footer .supermarket .text {
+  text-align: center;
+}
+
+.footer .supermarket .market-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.footer .supermarket .market-icon img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  margin: 2em;
+  display: block;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.footer .supermarket .market-icon .pns {
+  height: 8em;
+}
+
+.footer .supermarket .market-icon .countdown {
+  height: 12em;
+}
+
+.footer .supermarket .market-icon .nw {
+  height: 12em;
+}
+
+.footer .status {
+  padding-bottom: 1em;
+}
+
+.footer .status::before {
+  content: "";
+  position: absolute;
+  border-bottom: 3px #2e2e2e solid;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+  width: 50em;
+}
+
+.footer .status p {
+  text-align: center;
+  color: #767676;
+  font-size: 1.5em;
+}
+
+.footer .contact-info {
+  text-align: center;
+  background-color: #2e2e2e;
+  height: 10vw;
+  margin-top: 0.5em;
+}
+
+.footer .contact-info .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .contact-info .details > div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  text-align: left;
+  margin-left: 3.5em;
+  margin-top: 1em;
+}
+
+.footer .contact-info .details > div h2 {
+  color: white;
+}
+
+.footer .contact-info p {
+  color: white;
+  margin-top: 3.5em;
+}
+
+.jumbotron {
+  padding: 0;
+  background-image: url("../img/emart-jumbotron2.jpg");
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#contact h1 {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
