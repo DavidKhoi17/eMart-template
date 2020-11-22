@@ -280,3 +280,91 @@ body{
         }
     }
 }
+
+#single-item{
+    height: 40vw;
+    a{
+        font-size: 2.5em;
+        margin-top: 0.5em;
+        margin-left: 1em;
+        color: black;
+    }
+    .item{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 70%;
+        margin: auto;
+        img{
+            flex: 0 0 40%;
+            // margin-left: 2em;
+        }
+        .text{
+            flex: 0 0 60%;
+            margin-left: 2em;
+            p{
+                margin-top: 2em;
+            }
+            .price{
+                transform: translateY(80%);
+                color: #22EF2A;
+            }
+            .ingredient{
+                margin-top: 2em;
+                p{
+                    margin: 0;
+                    text-transform: lowercase;;
+                }
+            }
+            .where{
+                margin-top: 4em;
+                img{
+                    margin-right: 2em;
+                }
+                .count{
+                    width: 6em;
+                    height: 5em;
+                }
+                .pns{
+                    width: 10em;
+                    height: 4em;
+                }
+            }
+        }
+    }
+}
+
+#taxonomy{
+    height: 50vw;
+    .head{
+        display: flex;
+        a{
+            flex: 0 0 40%;
+            font-size: 2.5em;
+            margin-top: 0.5em;
+            margin-left: 1em;
+            color: black;
+        }
+        h1{
+            flex: 0 0 60%;
+        }
+    }
+    .items{
+        display: flex;
+        flex-wrap: nowrap;
+        >div{
+            flex: 0 0 23%;
+            margin: 1em;
+            img{
+                display: block;
+                margin: auto;
+            }
+            .text{
+                width: 100%;
+            }
+        }
+    }
+    #supplements{
+        position: relative;
+        overflow: hidden;
+    }
+}
