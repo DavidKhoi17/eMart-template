@@ -2,6 +2,17 @@ body {
   background-color: #efefef;
 }
 
+.section {
+  text-align: center;
+}
+
+.section h1 {
+  margin-top: 2em;
+  font-size: 2em;
+  font-family: "Playball", cursive;
+  color: #22EF2A;
+}
+
 .header {
   background-color: lightgray;
   position: -webkit-sticky;
@@ -38,7 +49,11 @@ body {
   width: 75%;
 }
 
-.header .btn {
+.header form {
+  text-align: right;
+}
+
+.header form .btn {
   margin-left: 1em;
 }
 
@@ -104,8 +119,8 @@ body {
   content: "";
   position: absolute;
   border-bottom: 3px #2e2e2e solid;
-  -webkit-transform: translateX(45%);
-          transform: translateX(45%);
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
   width: 15em;
 }
 
@@ -125,7 +140,7 @@ body {
   text-align: center;
   background-color: #2e2e2e;
   height: 70vw;
-  margin-top: 0.5em;
+  margin-top: 0.1em;
 }
 
 .footer .contact-info .details {
@@ -133,7 +148,7 @@ body {
 }
 
 .footer .contact-info .details > div {
-  padding-top: 1em;
+  padding-top: 0.5em;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
@@ -145,8 +160,10 @@ body {
 }
 
 .footer .contact-info p {
+  background-color: #2e2e2e;
   color: white;
-  margin-top: 3.5em;
+  font-size: 0.8em;
+  margin-top: 1.5em;
   font-family: "Castoro", serif;
 }
 
@@ -161,12 +178,6 @@ body {
 
 #home {
   text-align: center;
-}
-
-#home h2 {
-  margin-top: 2em;
-  font-size: 2em;
-  font-family: "Playball", cursive;
 }
 
 #home .why {
@@ -212,8 +223,7 @@ body {
 
 #products .above {
   display: block;
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
+  margin: auto;
 }
 
 #products .above > div {
@@ -270,66 +280,6 @@ body {
   color: #0DDFEC;
 }
 
-#products .below {
-  display: block;
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
-}
-
-#products .below > div {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-  cursor: pointer;
-  margin-top: 1em;
-}
-
-#products .below > div .image {
-  position: relative;
-}
-
-#products .below > div .image img {
-  display: block;
-  margin: auto;
-}
-
-#products .below > div .image img:hover + .more {
-  background-color: aqua;
-  display: block;
-  color: white;
-  border-radius: 0.5em;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-
-#products .below > div .image img:hover {
-  opacity: 0.5;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-
-#products .below > div .image .more {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  width: 25%;
-}
-
-#products .below > div .image .link {
-  font-family: "Playball", cursive;
-  font-size: 1.5em;
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-
-#products .below > div .image .link:hover {
-  color: #0DDFEC;
-}
-
 #lists .head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,8 +288,8 @@ body {
 
 #lists .head a {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+      -ms-flex: 0;
+          flex: 0;
   font-size: 2.5em;
   margin-top: 0.5em;
   margin-left: 1em;
@@ -347,9 +297,9 @@ body {
 }
 
 #lists .head h1 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 70%;
-          flex: 0 0 70%;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
   margin-top: 0.5em;
   font-size: 3em;
   color: #0DDFEC;
@@ -366,9 +316,11 @@ body {
 
 #lists .items > div {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 23%;
-          flex: 0 0 23%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
   margin: 1em;
+  margin: auto;
+  padding: 1.5em;
 }
 
 #lists .items > div img {
@@ -382,66 +334,20 @@ body {
 
 #lists .items > div .text h5 {
   font-family: "Castoro", serif;
+  font-size: 1.5em;
 }
 
-#single-item a {
-  font-size: 2.5em;
-  margin-top: 0.5em;
-  margin-left: 1em;
-  color: black;
+#lists .items > div .text p {
+  font-size: 0.8em;
 }
 
-#single-item .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 70%;
-  margin: auto;
-}
-
-#single-item .item img {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
-}
-
-#single-item .item .text {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 60%;
-          flex: 0 0 60%;
-  margin-left: 2em;
-}
-
-#single-item .item .text h3 {
-  font-family: "Castoro", serif;
-}
-
-#single-item .item .text p {
-  margin-top: 2em;
-}
-
-#single-item .item .text .price {
+#lists .items > div .text .price {
   -webkit-transform: translateY(80%);
           transform: translateY(80%);
   color: #22EF2A;
 }
 
-#single-item .item .text .ingredient {
-  margin-top: 2em;
-}
-
-#single-item .item .text .ingredient h5 {
-  font-family: "Castoro", serif;
-}
-
-#single-item .item .text .ingredient p {
-  margin: 0;
-  text-transform: lowercase;
-}
-
-#single-item .item .text .where {
+#lists .items > div .text .where {
   margin-top: 4em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,26 +356,27 @@ body {
       flex-wrap: wrap;
 }
 
-#single-item .item .text .where h5 {
+#lists .items > div .text .where h5 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   font-family: "Castoro", serif;
 }
 
-#single-item .item .text .where img {
+#lists .items > div .text .where img {
   margin-top: 1em;
-  margin-right: 2em;
 }
 
-#single-item .item .text .where .count {
-  width: 6em;
-  height: 5em;
+#lists .items > div .text .where .count {
+  width: 3.5em;
+  height: 3em;
+  margin: 0.5em;
 }
 
-#single-item .item .text .where .pns {
-  width: 10em;
-  height: 4em;
+#lists .items > div .text .where .pns {
+  width: 6.5em;
+  height: 3em;
+  margin: 0.5em;
 }
 
 #taxonomy .head {
@@ -480,8 +387,8 @@ body {
 
 #taxonomy .head a {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+      -ms-flex: 0 0 5%;
+          flex: 0 0 5%;
   font-size: 2.5em;
   margin-top: 0.5em;
   margin-left: 1em;
@@ -510,9 +417,10 @@ body {
 
 #taxonomy #supplements > div {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 23%;
-          flex: 0 0 23%;
-  margin: 1em;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+  margin: auto;
+  padding: 0 1.5em;
 }
 
 #taxonomy #supplements > div img {
@@ -522,10 +430,54 @@ body {
 
 #taxonomy #supplements > div .text {
   width: 100%;
+  text-align: left;
 }
 
 #taxonomy #supplements > div .text h5 {
   font-family: "Castoro", serif;
+  font-size: 1.5em;
+}
+
+#taxonomy #supplements > div .text p {
+  font-size: 0.8em;
+}
+
+#taxonomy #supplements > div .text .price {
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+  color: #22EF2A;
+}
+
+#taxonomy #supplements > div .text .where {
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#taxonomy #supplements > div .text .where h5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  font-family: "Castoro", serif;
+}
+
+#taxonomy #supplements > div .text .where img {
+  margin-top: 1em;
+}
+
+#taxonomy #supplements > div .text .where .count {
+  width: 3.5em;
+  height: 3em;
+  margin: 0.5em;
+}
+
+#taxonomy #supplements > div .text .where .pns {
+  width: 6.5em;
+  height: 3em;
+  margin: 0.5em;
 }
 
 .products .item {
@@ -655,8 +607,9 @@ body {
     font-family: "Castoro", serif;
   }
   .footer .contact-info p {
+    background-color: #2e2e2e;
     color: white;
-    margin-top: 3.5em;
+    margin-top: 4.5em;
     font-family: "Castoro", serif;
   }
   .jumbotron {
@@ -670,7 +623,7 @@ body {
   #home {
     text-align: center;
   }
-  #home h2 {
+  #home h1 {
     margin-top: 2em;
     font-size: 2em;
     font-family: "Playball", cursive;
@@ -716,8 +669,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-transform: translateX(5%);
             transform: translateX(5%);
   }
@@ -829,8 +782,8 @@ body {
   }
   #lists .head a {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+        -ms-flex: 0 0 5%;
+            flex: 0 0 5%;
     font-size: 2.5em;
     margin-top: 0.5em;
     margin-left: 1em;
@@ -838,8 +791,8 @@ body {
   }
   #lists .head h1 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 60%;
-            flex: 0 0 60%;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
     font-size: 3em;
     color: #0DDFEC;
     font-family: "Playball", cursive;
@@ -866,6 +819,10 @@ body {
   }
   #lists .items > div .text h5 {
     font-family: "Castoro", serif;
+    font-size: 1.5em;
+  }
+  #lists .items > div .text p {
+    font-size: 0.8em;
   }
   #single-item a {
     font-size: 2.5em;
@@ -939,8 +896,8 @@ body {
   }
   #taxonomy .head a {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+        -ms-flex: 0 0 5%;
+            flex: 0 0 5%;
     font-size: 2.5em;
     margin-top: 0.5em;
     margin-left: 1em;
@@ -948,8 +905,8 @@ body {
   }
   #taxonomy .head h1 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 60%;
-            flex: 0 0 60%;
+        -ms-flex: 0 0 95%;
+            flex: 0 0 95%;
     font-size: 3em;
     color: #0DDFEC;
     font-family: "Playball", cursive;
@@ -975,13 +932,22 @@ body {
   }
   #taxonomy #supplements > div .text {
     width: 100%;
+    text-align: left;
   }
   #taxonomy #supplements > div .text h5 {
     font-family: "Castoro", serif;
+    font-size: 1.5em;
+  }
+  #taxonomy #supplements > div .text .info {
+    font-size: 0.8em;
   }
   .products .item {
     display: none;
     margin: auto;
+  }
+  .products .controls {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
   }
   .products .controls a {
     font-family: "Castoro", serif;

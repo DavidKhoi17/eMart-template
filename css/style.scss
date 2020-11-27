@@ -7,6 +7,16 @@ body{
     background-color: #efefef;
 }
 
+.section{
+    text-align: center;
+    h1{
+        margin-top: 2em;
+        font-size: 2em;
+        font-family: $head;
+        color: #22EF2A;
+    }
+}
+
 .header{
     background-color: lightgray;
     position: sticky;
@@ -33,9 +43,13 @@ body{
     input{
         width: 75%;
     }
-    .btn{
-        margin-left: 1em;
-    }    
+    form{
+        text-align: right;
+        .btn{
+            margin-left: 1em;
+        } 
+    }
+       
 }
 
 .footer{
@@ -85,7 +99,7 @@ body{
             content: "";
             position: absolute;
             border-bottom: 3px #2e2e2e solid;
-            transform: translateX(45%);
+            transform: translateX(20%);
             width: 15em;
             // padding-bottom: 1em;
         }
@@ -106,11 +120,11 @@ body{
         text-align: center;
         background-color: #2e2e2e;
         height: 70vw;
-        margin-top: 0.5em;
+        margin-top: 0.1em;
         .details{
             display: block;
             >div{
-                padding-top: 1em;
+                padding-top: 0.5em;
                 flex: 0 0 30%;
                 h2{
                     color: white;
@@ -119,8 +133,10 @@ body{
             }
         }
         p{
+            background-color: #2e2e2e;
             color: white;
-            margin-top: 3.5em;
+            font-size: 0.8em;
+            margin-top: 1.5em;
             font-family: $text;
         }
     }
@@ -138,11 +154,6 @@ body{
 #home{
     text-align: center;
     // height: 180vw;
-    h2{
-        margin-top: 2em;
-        font-size: 2em;
-        font-family: $head;
-    }
     .why{
         display: block;
         >div{
@@ -182,7 +193,7 @@ body{
     }
     .above{
         display: block;
-        transform: translateX(5%);
+        margin: auto;
         >div{
             flex: 0 0 30%;
             cursor: pointer;
@@ -228,67 +239,22 @@ body{
             
         }
     }
-
-    .below{
-        display: block;
-        transform: translateX(5%);
-        >div{
-            flex: 0 0 30%;
-            cursor: pointer;
-            margin-top: 1em;
-            .image{
-                position: relative;
-                img{
-                    display: block;
-                    margin: auto;
-                    &:hover + .more{
-                        background-color: aqua;
-                        display: block;
-                        color: white;
-                        border-radius: 0.5em;
-                        transition: all ease 0.5s;
-                    }
-                    &:hover{
-                        opacity: 0.5;
-                        transition: all ease 0.5s;
-                    }
-                }
-                .more{
-                    display: none;
-                    position: absolute;
-                    top: 50%;
-                    left: 40%;
-                    width: 25%;
-                }
-                .link{
-                    font-family: $head;
-                    font-size: 1.5em;
-                    color: black;
-                    text-decoration: none;
-                    cursor: pointer;
-                    transition: all ease 0.5s;
-                    &:hover{
-                        color: $head-color;
-                    }
-                }
-            }
-        }
-    }
 }
 
 #lists{
     // height: 300vw;
     .head{
         display: flex;
+        // flex-wrap: wrap;
         a{
-            flex: 0 0 25%;
+            flex: 0;
             font-size: 2.5em;
             margin-top: 0.5em;
             margin-left: 1em;
             color: black;
         }
         h1{
-            flex: 0 0 70%;
+            flex: 100%;
             margin-top: 0.5em;
             font-size: 3em;
             color: $head-color;
@@ -299,8 +265,10 @@ body{
         display: flex;
         flex-wrap: wrap;
         >div{
-            flex: 0 0 23%;
+            flex: 0 0 20%;
             margin: 1em;
+            margin: auto;
+            padding: 1.5em;
             img{
                 display: block;
                 margin: auto;
@@ -309,71 +277,41 @@ body{
                 width: 100%;
                 h5{
                     font-family: $text;
+                    font-size: 1.5em;
                 }
-            }
-        }
-    }
-}
 
-#single-item{
-    // height: 300vw;
-    a{
-        font-size: 2.5em;
-        margin-top: 0.5em;
-        margin-left: 1em;
-        color: black;
-    }
-    .item{
-        display: flex;
-        flex-wrap: wrap;
-        width: 70%;
-        margin: auto;
-        img{
-            flex: 0 0 40%;
-        }
-        .text{
-            flex: 0 0 60%;
-            margin-left: 2em;
-            h3{
-                font-family: $text;
-            }
-            p{
-                margin-top: 2em;
-            }
-            .price{
-                transform: translateY(80%);
-                color: #22EF2A;
-            }
-            .ingredient{
-                margin-top: 2em;
-                h5{
-                    font-family: $text;
-                }
                 p{
-                    margin: 0;
-                    text-transform: lowercase;;
+                    font-size: 0.8em;
                 }
-            }
 
-            .where{
-                margin-top: 4em;
-                display: flex;
-                flex-wrap: wrap;
-                h5{
-                    flex: 0 0 100%;
-                    font-family: $text;
+                .price{
+                    transform: translateY(80%);
+                    color: #22EF2A;
                 }
-                img{
-                    margin-top: 1em;
-                    margin-right: 2em;
-                }
-                .count{
-                    width: 6em;
-                    height: 5em;
-                }
-                .pns{
-                    width: 10em;
-                    height: 4em;
+
+                .where{
+                    margin-top: 4em;
+                    display: flex;
+                    flex-wrap: wrap;
+                    h5{
+                        flex: 0 0 100%;
+                        font-family: $text;
+                    }
+                    img{
+                        margin-top: 1em;
+                        // margin-right: 2em;
+                        // text-align: center;
+                    }
+                    .count{
+                        width: 3.5em;
+                        height: 3em;
+                        margin: 0.5em;
+                    }
+                    .pns{
+                        width: 6.5em;
+                        height: 3em;
+                        margin: 0.5em;
+                    }
                 }
             }
         }
@@ -385,7 +323,7 @@ body{
     .head{
         display: flex;
         a{
-            flex: 0 0 25%;
+            flex: 0 0 5%;
             font-size: 2.5em;
             margin-top: 0.5em;
             margin-left: 1em;
@@ -406,16 +344,51 @@ body{
         display: flex;
         flex-wrap: wrap;
         >div{
-            flex: 0 0 23%;
-            margin: 1em;
+            flex: 0 0 20%;
+            margin: auto;
+            padding: 0 1.5em;
+            // margin-left: 3.5em;
             img{
                 display: block;
                 margin: auto;
             }
             .text{
                 width: 100%;
+                text-align: left;
                 h5{
                     font-family: $text;
+                    font-size: 1.5em;
+                }
+                p{
+                    font-size: 0.8em;
+                }
+                .price{
+                    transform: translateY(80%);
+                    color: #22EF2A;
+                }
+                .where{
+                    margin-top: 4em;
+                    display: flex;
+                    flex-wrap: wrap;
+                    h5{
+                        flex: 0 0 100%;
+                        font-family: $text;
+                    }
+                    img{
+                        margin-top: 1em;
+                        // margin-right: 2em;
+                        // text-align: center;
+                    }
+                    .count{
+                        width: 3.5em;
+                        height: 3em;
+                        margin: 0.5em;
+                    }
+                    .pns{
+                        width: 6.5em;
+                        height: 3em;
+                        margin: 0.5em;
+                    }
                 }
             }
         }
@@ -539,8 +512,9 @@ body{
                 }
             }
             p{
+                background-color: #2e2e2e;
                 color: white;
-                margin-top: 3.5em;
+                margin-top: 4.5em;
                 font-family: $text;
             }
         }
@@ -557,7 +531,7 @@ body{
     
     #home{
         text-align: center;
-        h2{
+        h1{
             margin-top: 2em;
             font-size: 2em;
             font-family: $head;
@@ -601,7 +575,7 @@ body{
         }
         .above{
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             transform: translateX(5%);
             >div{
                 flex: 0 0 30%;
@@ -643,8 +617,6 @@ body{
                         }
                     }
                 }
-                
-                
             }
         }
     
@@ -702,14 +674,14 @@ body{
         .head{
             display: flex;
             a{
-                flex: 0 0 40%;
+                flex: 0 0 5%;
                 font-size: 2.5em;
                 margin-top: 0.5em;
                 margin-left: 1em;
                 color: black;
             }
             h1{
-                flex: 0 0 60%;
+                flex: 0 0 90%;
                 font-size: 3em;
                 color: $head-color;
                 font-family: $head;
@@ -729,6 +701,10 @@ body{
                     width: 100%;
                     h5{
                         font-family: $text;
+                        font-size: 1.5em;
+                    }
+                    p{
+                        font-size: 0.8em;
                     }
                 }
             }
@@ -802,17 +778,18 @@ body{
         .head{
             display: flex;
             a{
-                flex: 0 0 40%;
+                flex: 0 0 5%;
                 font-size: 2.5em;
                 margin-top: 0.5em;
                 margin-left: 1em;
                 color: black;
             }
             h1{
-                flex: 0 0 60%;
+                flex: 0 0 95%;
                 font-size: 3em;
                 color: $head-color;
                 font-family: $head;
+                // text-align: center;
             }
         }
     
@@ -830,8 +807,13 @@ body{
                 }
                 .text{
                     width: 100%;
+                    text-align: left;
                     h5{
                         font-family: $text;
+                        font-size: 1.5em;
+                    }
+                    .info{
+                        font-size: 0.8em;
                     }
                 }
             }
@@ -844,6 +826,7 @@ body{
             margin: auto;
         }
         .controls{
+            transform: translateX(5%);
             a{
                 font-family: $text;
             }
